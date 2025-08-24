@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>青森summer vacation 旅のしおり</title>
+<style>
+    body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f2f4f6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* 表紙 */
+    .cover {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    .cover img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .cover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+    .cover-text h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    .cover-text p {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-top: 40px;
+        padding: 20px;
+        border-radius: 15px;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    h2::before {
+        content: "📌 ";
+        margin-right: 8px;
+    }
+    .day {
+        position: relative;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        color: white;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+        border-radius: 15px;
+    }
+    .day-content {
+        position: relative;
+        z-index: 2;
+    }
+    ul {
+        margin-left: 20px;
+    }
+    li {
+        margin-bottom: 8px;
+    }
+    .time {
+        color: #f1c40f;
+        font-weight: bold;
+    }
+    a {
+        color: #ffd700;
+        text-decoration: underline;
+    }
+    .footer {
+        text-align: center;
+        font-size: 0.9em;
+        color: #888;
+        margin: 50px 0;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <!-- 表紙 -->
+    <div class="cover">
+        <img src="img/cover.jpg" alt="表紙画像">
+        <div class="cover-text">
+            <h1>2025夏 青森旅行</h1>
+            <p>〜五感を満たす 青森の旅〜</p>
+        </div>
+    </div>
+
+    <!-- Day 1 -->
+    <div class="day" style="background-image: url('img/day1.jpg');">
+        <div class="overlay"></div>
+        <div class="day-content">
+            <h2>Day 1：奥入瀬渓流ハイキング</h2>
+            <ul>
+                <li><span class="time">09:30</span> 八戸駅着 → レンタカーで奥入瀬渓流へ</li>
+                <li><span class="time">11:15～15:00</span> 🚶徒歩散策（子ノ口 → 石ヶ戸 約9km）</li>
+                <li><span class="time">12:30</span> ランチ：子ノ口付近／購入した軽食を沢で</li>
+                <li><span class="time">15:00～16:30</span> サイクリングで子ノ口に戻る</li>
+                <li><span class="time">16:30</span> ホテルへ移動</li>
+                <li><span class="time">17:00</span> 十和田湖畔 桜楽 チェックイン</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Day 2 -->
+    <div class="day" style="background-image: url('img/day2.jpg');">
+        <div class="overlay"></div>
+        <div class="day-content">
+            <h2>Day 2：十和田湖クルーズ</h2>
+            <ul>
+                <li><span class="time">10:00</span> チェックアウト</li>
+                <li><span class="time">10:45～11:45</span> リブパイオニア・パワースポットクルーズ</li>
+                <li><span class="time">12:00</span> ランチ：お土産とお食事の店もりた</li>
+                <li><span class="time">14:00</span> 界 津軽へ移動（約1時間20分）</li>
+                <li><span class="time">15:30</span> チェックイン</li>
+                <li><span class="time">19:30</span> 夕食</li>
+                <li><span class="time">21:15</span> 津軽三味線ライブ鑑賞</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Day 3 -->
+    <div class="day" style="background-image: url('img/day3.jpg');">
+        <div class="overlay"></div>
+        <div class="day-content">
+            <h2>Day 3：弘前観光と津軽塗体験</h2>
+            <ul>
+                <li>午前 🌿 ホテルでゆっくり or 弘前市内散策</li>
+                <li><span class="time">13:30～15:00</span> 津軽藩ねぷた村 津軽塗体験</li>
+                <li><span class="time">15:30～17:00</span> 弘前市内自由散策（城下町・カフェなど）</li>
+                <li><span class="time">17:30</span> 新青森駅へ移動</li>
+                <li><span class="time">19:44</span> 新青森発 → 00:12 稲毛海岸着</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 付録 -->
+    <div class="day" style="background-color:#34495e;">
+        <div class="day-content">
+            <h2>参考情報（付録）</h2>
+            <ul>
+                <li>奥入瀬渓流マップ：<a href="https://towadako.or.jp/wp-content/themes/towadako/pdf/map/map_oirase.pdf" target="_blank">PDFリンク</a></li>
+                <li>十和田湖クルーズ（リブパイオニア）：<a href="https://ribpioneer.com" target="_blank">サイトリンク</a></li>
+                <li>十和田湖畔 桜楽：<a href="https://towadakohansakura.com" target="_blank">サイトリンク</a></li>
+                <li>界 津軽（星野リゾート）：<a href="https://hoshinoresorts.com/ja/hotels/kaitsugaru/" target="_blank">サイトリンク</a></li>
+                <li>津軽藩ねぷた村：<a href="http://neputamura.com/experiecce-crafts/" target="_blank">サイトリンク</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 青森summer vacation
+    </div>
+
+</div>
+</body>
+</html>
